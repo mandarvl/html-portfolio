@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Essai';
+    src: url('../fonts/Essai.woff2') format('woff2'),
+        url('../fonts/Essai.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magical Stylish';
+    src: url('../fonts/MagicalStylishSansSerifDemo.woff2') format('woff2'),
+        url('../fonts/MagicalStylishSansSerifDemo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body{
+    margin: 0 ;
+    padding: 0 ;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-size: 16px ;
+    line-height: 1.7 ;
+}
+
+button, img{
+    display: inline-block ;
+}
+
+button{
+    color: #fff;
+    background-color: #d63031;
+    border: 0;
+    padding: .8em 1.67em;
+    line-height: 1.5em !important;
+    font-size: 1rem;
+    font-weight: bold ;
+    cursor: pointer ;
+    margin-top: 10px ;
+    transition: .2s all ease-in ;
+}
+
+button:hover{
+    background-color: #1e1b46;
+}
+
+img{
+    width: 100% ;
+}
+
+#main-content{
+    width: 90% ;
+    margin: auto ;
+}
+
+#project-container{
+    margin: 40px 0 ;
+}
+
+.project-area{
+    display : flex ;
+    align-items: center ;
+    position: relative;
+    flex-wrap: nowrap ;
+    z-index: 1 !important;
+    margin-bottom: 130px ;
+}
+
+.project-area::after{
+    display: block;
+    content: '';
+    right: 0;
+    width: 80%;
+    height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    top: -2rem;
+    position: absolute !important;
+    z-index: -2 !important;
+    background-color: #e8d7d7;
+    opacity: .5;
+}
+
+.p-container-image{
+    width: 40% ;
+    margin: 2rem !important ;
+    margin-left: 0 !important ;
+    overflow: hidden ;
+}
+
+.p-container-text{
+    width: 60% ;
+    padding: 2em 6em 2em 2em;
+}
+
+.project-area h4{
+    text-transform: uppercase ;
+    letter-spacing: .1em ;
+    font-size: 18px ;
+    color: #656565 ;
+    font-weight: normal ;
+    margin: .5rem 0 ;
+}
+
+.project-area h2{
+    margin : 0;
+    font-family: 'Magical Stylish', 'Arial' ;
+    font-size: 33px ;
+    line-height: 1.3 ;
+    color: #333352 ;
+    font-weight: 300 ;
+}
+
+.project-area p{
+    color : #242424 ;
+    letter-spacing: .08em ;
+}
+
+.project-area button{
+    text-transform: uppercase ;
+    letter-spacing: .1em ;
+}
