@@ -47,6 +47,7 @@ button:hover{
 
 img{
     width: 100% ;
+    vertical-align: middle;
 }
 
 #main-content{
@@ -54,8 +55,8 @@ img{
     margin: auto ;
 }
 
-#project-container{
-    margin: 40px 0 ;
+.project-container{
+    margin: 100px 0 50px 0 ;
 }
 
 .project-area{
@@ -91,10 +92,25 @@ img{
 }
 
 .p-container-image{
+    display: flex ;
     width: 40% ;
     margin: 2rem !important ;
     margin-left: 0 !important ;
     overflow: hidden ;
+    box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.1) ;
+    position: relative ;
+}
+
+.p-container-image:before {
+	content: "" ;
+	float: left ;
+	padding-top: 100% ;
+}
+
+.p-container-image img{
+    object-fit: cover ;
+    min-width:100%;
+    min-height:100%;
 }
 
 .p-container-text{

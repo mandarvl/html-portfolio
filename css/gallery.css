@@ -1,0 +1,85 @@
+#gallery{
+    position: fixed ;
+    top: 0 ;
+    left: 0 ;
+    height: 100% ;
+    width: 100% ;
+    background-color: rgba(0, 0, 0, 0.8) ;
+    z-index: 99 ;
+    
+    display: none ;
+    align-items: center ;
+}
+
+.close{
+    font-size: 2em ;
+    cursor: pointer ;
+    position: absolute ;
+    top: 5px ;
+    right: 10px ;
+    z-index: 999 ;
+    color: #ff4c4c ;
+    transition: color .8s ;
+}
+
+.close:hover{
+    color: #ff7c7c ;
+}
+
+.slider{
+    display: flex ;
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+}
+
+.slider .item img {
+    object-fit: cover;
+    min-width:100%;
+    min-height:100%;
+}
+
+.slider .previous, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.slider .item:before{
+    content: "" ;
+    float: left;
+	padding-top: 56.25%;
+}
+
+.slider .previous:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.slider .item {
+    position: relative ;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
