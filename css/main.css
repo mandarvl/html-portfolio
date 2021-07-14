@@ -82,6 +82,14 @@ img{
     opacity: .5;
 }
 
+.project-area.right{
+    flex-direction: row-reverse ;
+}
+
+.project-area.right::after{
+    left: 0 ;
+}
+
 .p-container-image{
     width: 40% ;
     margin: 2rem !important ;
@@ -92,6 +100,16 @@ img{
 .p-container-text{
     width: 60% ;
     padding: 2em 6em 2em 2em;
+}
+
+.project-area.right .p-container-image{
+    margin-right: 0 !important ;
+    margin-left: 2rem !important ;
+}
+
+.project-area.right .p-container-text{
+    padding-right: 2em !important ;
+    padding-left: 6em !important ;
 }
 
 .project-area h4{
