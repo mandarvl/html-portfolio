@@ -33,6 +33,7 @@ button, img{
 }
 
 button, .btn-style{
+    display: inline-block ;
     color: #fff;
     background-color: #d63031;
     border: 0;
@@ -43,7 +44,7 @@ button, .btn-style{
     cursor: pointer ;
     margin-top: 10px ;
     transition: .2s all ease-in ;
-    text-transform: none ;
+    text-decoration: none ;
 }
 
 button:hover, .btn-style:hover{
@@ -55,8 +56,16 @@ img{
     vertical-align: middle;
 }
 
+.title-text{
+    font-family: 'Magical Stylish', 'Arial' ;
+    font-size: 33px ;
+    line-height: 1.3 ;
+    color: #333352 ;
+    font-weight: 300 ;
+}
+
 #main-content{
-    width: 90% ;
+    width: 85% ;
     margin: auto ;
 }
 
@@ -98,7 +107,7 @@ img{
     left: 0 ;
 }
 
-.p-container-image, .card-image{
+.p-container-image{
     display: flex ;
     width: 40% ;
     margin: 2rem !important ;
@@ -146,11 +155,6 @@ img{
 
 .project-area h2{
     margin : 0;
-    font-family: 'Magical Stylish', 'Arial' ;
-    font-size: 33px ;
-    line-height: 1.3 ;
-    color: #333352 ;
-    font-weight: 300 ;
 }
 
 .project-area p{
@@ -170,17 +174,31 @@ img{
     flex-direction: row-reverse ;
 }
 
-.card>*{
-    width: 50% ;
+.card-image{
+    position: relative ;
+    width: 40% ;
+    z-index: 1 ;
+}
+
+.card-image img{
+    width: 100% ;
+    height: auto ;
 }
 
 .card-text-container{
-    background-color: #fff ;
+    width: 60% ;
+    z-index: 99 ;
 }
 
 .card-text-container .card-text{
-    width: 120% ;
-    padding: 30px ;
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1) ;
+    background-color: #fff ;
+    width: 104% ;
+    padding: 40px ;
+}
+
+.card-text h1{
+    margin: 0 ;
 }
 
 footer{
