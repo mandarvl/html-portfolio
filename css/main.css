@@ -28,6 +28,27 @@ button, img{
     display: inline-block ;
 }
 
+.btn-pulse{
+    box-shadow: 0 0 0 0 hsl(339.8, 100%, 36.1%) ;
+    animation: 3s infinite buttonPulse ease-out;
+}
+
+.btn-pulse:hover{
+    animation: none ;
+}
+
+@keyframes buttonPulse{
+    0% {
+        box-shadow: 0 0 0 0 hsla(339.8, 100%, 36.1%, .6);
+    }
+    50% {
+        box-shadow: 0 0 0 12px hsla(244, 44%, 19%, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 12px hsla(244, 44%, 19%, 0);
+    }
+}
+
 button, .btn-style{
     display: inline-block ;
     color: #fff;
@@ -123,6 +144,11 @@ nav ul li a.active:after, nav ul li a:hover:after{
     line-height: 1.3 ;
     color: #333352 ;
     font-weight: 300 ;
+}
+
+#head-content{
+    width: 85% ;
+    margin: auto ;
 }
 
 #main-content{
@@ -260,6 +286,13 @@ nav ul li a.active:after, nav ul li a:hover:after{
 
 .card-text h1{
     margin: 0 ;
+}
+
+.card-text .action{
+    color: #d63031 ;
+    font-weight: bold ;
+    animation: bounce 1s ;
+    animation-delay: 2s ;
 }
 
 footer{
