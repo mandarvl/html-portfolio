@@ -24,11 +24,15 @@ html, body{
     line-height: 1.7 ;
 }
 
+html.colored{
+    background-color: #e8d7d7;
+}
+
 button, img{
     display: inline-block ;
 }
 
-button{
+button, .btn-style{
     color: #fff;
     background-color: #d63031;
     border: 0;
@@ -39,9 +43,10 @@ button{
     cursor: pointer ;
     margin-top: 10px ;
     transition: .2s all ease-in ;
+    text-transform: none ;
 }
 
-button:hover{
+button:hover, .btn-style:hover{
     background-color: #1e1b46;
 }
 
@@ -66,6 +71,7 @@ img{
     flex-wrap: nowrap ;
     z-index: 1 !important;
     margin-bottom: 130px ;
+    animation: 1s backInLeft ;
 }
 
 .project-area::after{
@@ -85,13 +91,14 @@ img{
 
 .project-area.right{
     flex-direction: row-reverse ;
+    animation: 1s backInRight !important ;
 }
 
 .project-area.right::after{
     left: 0 ;
 }
 
-.p-container-image{
+.p-container-image, .card-image{
     display: flex ;
     width: 40% ;
     margin: 2rem !important ;
@@ -154,4 +161,45 @@ img{
 .project-area button{
     text-transform: uppercase ;
     letter-spacing: .1em ;
+}
+
+.card{
+    display : flex ;
+    align-items: center ;
+    flex-wrap: nowrap ;
+    flex-direction: row-reverse ;
+}
+
+.card>*{
+    width: 50% ;
+}
+
+.card-text-container{
+    background-color: #fff ;
+}
+
+.card-text-container .card-text{
+    width: 120% ;
+    padding: 30px ;
+}
+
+footer{
+    display: flex ;
+    justify-content: space-between ;
+    background-color: #141231 ;
+    padding: 15px 20px ;
+}
+
+footer *{
+    margin: 0 ;
+    color: #d8d8d8 ;
+    transition: color .5s ;
+}
+
+footer a{
+    letter-spacing: .5em ;
+}
+
+footer a:hover .fa{
+    color:#d63031!important ;
 }
