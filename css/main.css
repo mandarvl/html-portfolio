@@ -24,10 +24,6 @@ html, body{
     line-height: 1.7 ;
 }
 
-html.colored{
-    background-color: #e8d7d7;
-}
-
 button, img{
     display: inline-block ;
 }
@@ -56,9 +52,74 @@ img{
     vertical-align: middle;
 }
 
+header{
+    margin-bottom: 60px ;
+    background-color: #e8dfd7;
+    padding-bottom: 60px ;
+}
+
+header #menu{
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
+    padding: 30px 30px ;
+    margin-bottom: 18px ;
+}
+
+.site-title a{
+    margin: 0 ;
+    font-family: 'Magical Stylish', 'Arial' ;
+    font-size: 30px ;
+    line-height: 1.2 ;
+    color: #2b2b3b ;
+    font-weight: bold ;
+    opacity: 0.8 ;
+    text-decoration: none ;
+}
+
+nav ul{
+    list-style: none ;
+    padding: 0 ;
+    margin: 0 ;
+}
+
+nav ul li{
+    display: inline-block ;
+}
+
+nav ul li a{
+    position: relative ;
+    display: inline-block ;
+    padding: 5px ;
+    color: #333352 ;
+    text-transform: uppercase ;
+    letter-spacing: .15em ;
+    text-decoration: none ;
+    font-weight: 500 ;
+    transition-duration: 1s ;
+}
+
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    margin: 4px 0 0;
+    background-color: #333352 !important;
+    left: 2px;
+    opacity: 0;
+    transition-duration: 1s ;
+}
+
+nav ul li a.active:after, nav ul li a:hover:after{
+    width: calc(96%);
+    opacity: 1 !important;
+}
+
 .title-text{
     font-family: 'Magical Stylish', 'Arial' ;
-    font-size: 33px ;
+    font-size: 30px ;
     line-height: 1.3 ;
     color: #333352 ;
     font-weight: 300 ;
@@ -94,7 +155,7 @@ img{
     top: -2rem;
     position: absolute !important;
     z-index: -2 !important;
-    background-color: #e8d7d7;
+    background-color: #e8dfd7;
     opacity: .5;
 }
 
