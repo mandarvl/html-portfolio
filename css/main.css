@@ -83,7 +83,7 @@ header #menu{
     display: flex ;
     justify-content: space-between ;
     align-items: center ;
-    padding: 30px 30px ;
+    padding: 30px 40px ;
     margin-bottom: 18px ;
 }
 
@@ -200,7 +200,7 @@ nav ul li a.active:after, nav ul li a:hover:after{
     margin: 2rem !important ;
     margin-left: 0 !important ;
     overflow: hidden ;
-    box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.1) ;
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1) ;
     position: relative ;
 }
 
@@ -295,17 +295,118 @@ nav ul li a.active:after, nav ul li a:hover:after{
     animation-delay: 2s ;
 }
 
+.parcours{
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    padding: 2em 0;
+    row-gap: 1em;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center ;
+    grid-auto-rows: 1fr;
+    margin-bottom: 50px ;
+    
+}
+
+.parcours-item{
+    position: relative;
+    box-sizing: border-box;
+    height: 100% ;
+}
+
+.p-first{
+    background-color: #d4dbf9 ;
+    color: #2a335a ;
+    
+    grid-row: 1/1;
+}
+
+.p-second{
+    background-color: #c4edff ;
+    color: #10465a ;
+
+    grid-row: 2/2;
+}
+
+.p-third{
+    background-color: #c4ffd2;
+    color: #105a2f;
+    
+    grid-row: 3/3;
+}
+
+
+.parcours-detail>*{
+    display: block ;
+}
+
+.parcours-detail .school-name{
+    font-size: 18px ;
+}
+
+.parcours-detail .diploma-name{
+    font-size: 15px ;
+}
+
+.parcours-date>*{
+    font-size: 19px ;
+    font-weight: bold ;
+}
+
+.parcours-item-content{
+    box-sizing: border-box;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    height: 100% ;
+}
+
+.parcours-detail{
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 0;
+    flex: 1;
+    flex-basis: auto;
+}
+
+.parcours-date{
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 0;
+}
+
+@media(min-width: 992px){
+    .parcours{
+        grid-template-columns: repeat(15,1fr);
+    }
+    
+    .p-first{
+        grid-column: 11/span 5;
+    }
+
+    .p-second{
+        grid-column: 6/span 5 ;
+    }
+
+    .p-third{
+        grid-column: 1/span 5 ;
+    }
+}
+
 footer{
     display: flex ;
     justify-content: space-between ;
-    background-color: #141231 ;
-    padding: 15px 20px ;
+    background-color: #9a8e84 ;
+    background: linear-gradient(#c7bab6, #9a8e84) ;
+    padding: 20px 30px ;
 }
 
 footer *{
     margin: 0 ;
-    color: #d8d8d8 ;
-    transition: color .5s ;
+    color: #ffffff ;
+    transition: all .5s ;
 }
 
 footer a{
@@ -313,5 +414,5 @@ footer a{
 }
 
 footer a:hover .fa{
-    color:#d63031!important ;
+    font-size: 18px ;
 }
