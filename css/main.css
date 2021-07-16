@@ -297,7 +297,6 @@ nav ul li a.active:after, nav ul li a:hover:after{
 .card-text-container .card-text{
     box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1) ;
     background-color: #fff ;
-    background-color: rgba(255, 255, 255, .9) ;
     width: 104% ;
     padding: 40px ;
 }
