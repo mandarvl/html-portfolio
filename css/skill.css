@@ -1,0 +1,61 @@
+.skill-container{
+    display: grid ;
+    grid-template-columns: 50% 50% ;
+    grid-gap: 2em ;
+    margin-bottom: 60px ;
+}
+
+.skill-item{
+    position: relative ;
+}
+
+.skill-item-text{
+    position: absolute ;
+    top: 0 ;
+    bottom: 0 ;
+    left: 0 ;
+    right: 0 ;
+    z-index: 99 ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+}
+
+.skill-name{
+    text-transform: uppercase ;
+    letter-spacing: .1em ;
+    font-size: 18px ;
+}
+
+.skill-percentage{
+    font-size: 20px ;
+    color: #fff ;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.3) ;
+}
+
+.skill-bar{
+    position: relative ;
+    background-color: #cbcbcb ;
+    z-index: 1 ;
+    padding: 35px ;
+    box-shadow: 0 0 1px 1px inset rgba(0, 0, 0, .05) ;
+    
+}
+
+.skill-bar-foreground{
+    position: absolute ;
+    top: 0 ;
+    bottom: 0 ;
+    left: 0 ;
+    width: 100% ;
+    background-color: #1e1b46 ;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .08) ;
+    opacity: .8 ;
+    z-index: 2 ;
+}
+
+@media(max-width: 992px){
+    .skill-container{
+        grid-template-columns: 100% ;
+    }
+}

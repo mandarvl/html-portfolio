@@ -192,6 +192,7 @@ nav ul li a.active:after, nav ul li a:hover:after{
 
 .project-area.right::after{
     left: 0 ;
+    opacity: .8 ;
 }
 
 .p-container-image{
@@ -265,11 +266,27 @@ nav ul li a.active:after, nav ul li a:hover:after{
     position: relative ;
     width: 40% ;
     z-index: 1 ;
+    overflow: hidden ;
+}
+
+.card-image:before {
+    display: block;
+    width: 100%;
+    padding-top: 125%;
+    content: "";
 }
 
 .card-image img{
-    width: 100% ;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    padding: .25em;
     height: auto ;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .card-text-container{
@@ -280,6 +297,7 @@ nav ul li a.active:after, nav ul li a:hover:after{
 .card-text-container .card-text{
     box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1) ;
     background-color: #fff ;
+    background-color: rgba(255, 255, 255, .9) ;
     width: 104% ;
     padding: 40px ;
 }
@@ -359,7 +377,7 @@ nav ul li a.active:after, nav ul li a:hover:after{
     display: -ms-flexbox;
     display: flex;
     justify-content: space-between;
-    padding: 1.5em;
+    padding: 3em;
     height: 100% ;
 }
 
@@ -399,7 +417,7 @@ footer{
     display: flex ;
     justify-content: space-between ;
     background-color: #9a8e84 ;
-    background: linear-gradient(#c7bab6, #9a8e84) ;
+    background: linear-gradient(#a59691, #8b7d77) ;
     padding: 20px 30px ;
 }
 
@@ -407,6 +425,7 @@ footer *{
     margin: 0 ;
     color: #ffffff ;
     transition: all .5s ;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5) ;
 }
 
 footer a{
